@@ -10,8 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-                       <input id="buttom1" type="button" value="病人端" style="display:block; margin:0 auto; height: 200px; width: 200px;" onclick="javascript: location.href ='Patient_choose.aspx'" >
-           <input id="buttom2" type="button" value="復健師端" style="display:block; margin:0 auto; height: 200px; width: 200px;" onclick="javascript: location.href = 'Default.aspx'" >
+           <input id="buttom1" type="button" value="病人端" style="display:block; margin:0 auto; height: 200px; width: 200px;" onclick="javascript: location.href ='Patient_choose.aspx'" >
+           <input id="buttom2" type="button" value="復健師端" style="display:block; margin:0 auto; height: 200px; width: 200px;" onclick="javascript: location.href = 'Sign_in.aspx'" >
 
         </div>
     </form>

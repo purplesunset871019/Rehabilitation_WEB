@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Rehabilitation_WEB
 {
-    public partial class About : Page
+    public partial class Set_up : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
