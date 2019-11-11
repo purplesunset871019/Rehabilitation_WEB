@@ -105,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Patient_check_in.aspx" />
     <Content Include="Set_up.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -163,6 +164,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Patient_check_in.aspx.cs">
+      <DependentUpon>Patient_check_in.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patient_check_in.aspx.designer.cs">
+      <DependentUpon>Patient_check_in.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Set_up.aspx.cs">
       <DependentUpon>Set_up.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
