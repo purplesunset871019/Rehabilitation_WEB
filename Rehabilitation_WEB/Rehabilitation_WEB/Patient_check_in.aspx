@@ -6,17 +6,17 @@
 
         <div class="frame-group">
             <label class="control-label col-md-2" for="Name">病人姓名：</label>
-            <asp:Button ID="Button1" runat="server" Text="之後顯示" Height="50px" Width="400px" />
+            <label class="control-label col-md-2" for="Name">之後顯示</label>   
         </div>
-
+        </br>
         <div class="frame-group">
-            <label class="control-label col-md-2" for="Name">復健程度：</label>
-            <asp:Button ID="Button3" runat="server" Text="之後顯示" Height="50px" Width="400px" />
+            <label class="control-label col-md-2" for="Name" style="text-align:center;">復健程度：</label>
+            <label class="control-label col-md-2" for="Name">之後顯示</label>   
         </div>
-        
+        <p></p>
         <div class="frame-group">
-            <label class="control-label col-md-2" for="Name">排程或新接單：</label>
-            <asp:Button ID="Button2" runat="server" Text="之後顯示" Height="50px" Width="400px" />
+            <label class="control-label col-md-2" for="Name" style="text-align:center;">排程或新接單：</label>
+            <label class="control-label col-md-2" for="Name">之後顯示</label>            
         </div>
 
         <div class="frame-group">          
