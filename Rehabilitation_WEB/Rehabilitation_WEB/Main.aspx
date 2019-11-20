@@ -1,33 +1,23 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="Rehabilitation_WEB.Main" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="Rehabilitation_WEB.Main" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="Patient-check-in-frame">
+        <hr />
+        
+        <div class ="logoimg">
+            <a href="http://www.eck.org.tw/"><img src="https://images.1111.com.tw/oad/62/89762_0.jpg?2017/5/12%20%E4%B8%8A%E5%8D%88%2008:36:14"></a>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>復健管理系統</title>
-    <style type="text/css">
-    .logoimg{margin:0px auto ;display:block; height:auto ;width:960px ;padding:50px;}
-    .main{width:900px; margin:0px auto;}
-    .patient{width:200px; padding:100px; float:left;}
-    .staff{width:200px; padding:100px; float:left;}
-    </style>
-</head>
-<body>
-    <div class ="logoimg">
-         <a href="http://www.eck.org.tw/"><img src="https://images.1111.com.tw/oad/62/89762_0.jpg?2017/5/12%20%E4%B8%8A%E5%8D%88%2008:36:14"></a>
-    </div>
-    <form id="form1" runat="server">
-        <div class="main">
-            <div class ="patient">
-                  <input id="buttom1" type="button" value="病人端" style="display:block; margin:0 auto; height: 200px; width: 300px; font-size: 45px; 
-                        font-family:Microsoft YaHei; background-color:#E8CCFF;  border-radius:20px;  " onclick="javascript: location.href = 'Patient_choose.aspx'" >
-            </div>
-            <div class="staff">
-                 <input id="buttom2" type="button" value="復健師端" style="display:block; margin:0 auto; height: 200px; width: 300px; font-size:45px; 
-                        font-family:Microsoft YaHei; background-color:#EEFFBB; border-radius:20px; " onclick="javascript: location.href = 'Sign_in.aspx'" >
-            </div>
         </div>
-    </form>
-</body>
-</html>
+
+        <p></p>
+        <div class="frame-group">
+            <asp:Button ID="Button1" runat="server" Text="病人端" />
+
+            <asp:Button ID="Button2" runat="server" Text="復健師端" OnClientClick="window.location.href='Sign_in.aspx';return false;"/>
+        </div>
+
+    </div>
+
+
+
+</asp:Content>
