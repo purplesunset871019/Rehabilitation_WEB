@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Patient_check_in.aspx.cs" Inherits="Rehabilitation_WEB.Patient_check_in" %>
+﻿<%@ Page Title="病人報到" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Patient_check_in.aspx.cs" Inherits="Rehabilitation_WEB.Patient_check_in" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="Patient-check-in-frame">

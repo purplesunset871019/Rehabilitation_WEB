@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Doctor_Default.aspx.cs" Inherits="Rehabilitation_WEB.Doctor_Default" %>
+﻿<%@ Page Title="復健師主頁" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Doctor_Default.aspx.cs" Inherits="Rehabilitation_WEB.Doctor_Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 

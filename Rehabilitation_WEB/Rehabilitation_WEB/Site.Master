@@ -69,9 +69,16 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
+            <div style="background-color:#00BBFF;">
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - 我的 ASP.NET  應用程式</p>
+                <a>地址：237新北市三峽區復興路399號</a>
             </footer>
+            </div>
+            <div style="background-color:greenyellow;">
+            <footer>
+                <a>&copy; <%: DateTime.Now.Year %>  行天宮醫療志業醫療財團法人恩主公醫院 En Chu Kong Hospital. All rights reserved.</a>
+            </footer>
+            </div>
         </div>
 
     </form>

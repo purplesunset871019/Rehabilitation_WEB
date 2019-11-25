@@ -15,24 +15,50 @@
     .main{width:900px; margin:0px auto;}
     .patient{width:200px; padding:100px; float:left;}
     .staff{width:200px; padding:100px; float:left;}
+    footer{
+    width: 100%;
+    height:100px;   /* footer的高度一定要是固定值*/ 
+    position:absolute;
+    bottom:0px;
+    left:0px;
+}
+
     </style>
 </head>
 <body>
+    <div>
+            <div class="navbar  navbar-default " style="text-align:right; background-color:#87CEFA;">
+                <a onclick="javascript: location.href = 'Sign_in.aspx'">登入</a>
+        </div>
     <div class ="logoimg">
-         <a href="http://www.eck.org.tw/"><img src="https://images.1111.com.tw/oad/62/89762_0.jpg?2017/5/12%20%E4%B8%8A%E5%8D%88%2008:36:14"></a>
+         <a href="http://www.eck.org.tw/"><img src="https://images.1111.com.tw/oad/62/89762_0.jpg?2017/5/12%20%E4%B8%8A%E5%8D%88%2008:36:14" /></a>
     </div>
+    <div>
     <form id="form1" runat="server">
         <div class="main">
             <div class ="patient">
                   <input id="buttom1" type="button" value="病人端" style="display:block; margin:0 auto; height: 200px; width: 300px; font-size: 45px; 
-                        font-family:Microsoft YaHei; background-color:#E8CCFF;  border-radius:20px;  " onclick="javascript: location.href = 'Patient_choose.aspx'" >
+                        font-family:Microsoft YaHei; background-color:#E8CCFF;  border-radius:20px;  " onclick="javascript: location.href = 'Patient_choose.aspx'" />
             </div>
             <div class="staff">
                  <input id="buttom2" type="button" value="復健師端" style="display:block; margin:0 auto; height: 200px; width: 300px; font-size:45px; 
-                        font-family:Microsoft YaHei; background-color:#EEFFBB; border-radius:20px; " onclick="javascript: location.href = 'Sign_in.aspx'" >
+                        font-family:Microsoft YaHei; background-color:#EEFFBB; border-radius:20px; " />
             </div>
         </div>
     </form>
+    </div>
+    
+
+
+    <footer>
+        <div style="background-color:#87CEFA;">
+            <a runat="server" style="color:white;">地址：237新北市三峽區復興路399號</a>
+        </div>
+        <div style="background-color:#32CD32;">
+        <a runat="server" style="color:white;">&copy; <%: DateTime.Now.Year %>  行天宮醫療志業醫療財團法人恩主公醫院 En Chu Kong Hospital. All rights reserved.</a>
+        </div>
+    </footer>
+    </div>
 </body>
 </html>
 
