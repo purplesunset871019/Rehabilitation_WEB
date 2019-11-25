@@ -16,10 +16,6 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <style>
-
-    </style>
-
 </head>
 <body>
     <form runat="server">
@@ -43,24 +39,23 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar  navbar-default " style="background-color:#ADD8E6;">
-            <div class="container-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
                 <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-                    <a class="navbar-brand" runat="server" style="color:white;" >復健師端</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" >復健師端</a>
 
                 </div>
-                <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+                <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li id="active"><a runat="server" href="~/Doctor_Default" style="color:white;">首頁<span class="sr-only">(current)</span></a></li>
-                        <li><a runat="server" href="~/Set_up" style="color:white;">設定</a></li>
-                        <li><a runat="server" style="color:white;">XXX使用中</a></li>                        
-                        <li><a runat="server" href="~/Main" style="color:white;">登出</a></li>
+                        <li><a runat="server" href="~/Doctor_Default">首頁</a></li>
+                        <li><a runat="server" href="~/Set_up">設定</a></li>
+                        <li><asp:Label ID="Label1" runat="server" Text="XXX使用中" ForeColor="Red"></asp:Label></li>
+                        <li><a runat="server" href="~/Main">登出</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,16 +64,9 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <div style="background-color:#00BBFF;">
             <footer>
-                <a>地址：237新北市三峽區復興路399號</a>
+                <p>&copy; <%: DateTime.Now.Year %> - 我的 ASP.NET  應用程式</p>
             </footer>
-            </div>
-            <div style="background-color:greenyellow;">
-            <footer>
-                <a>&copy; <%: DateTime.Now.Year %>  行天宮醫療志業醫療財團法人恩主公醫院 En Chu Kong Hospital. All rights reserved.</a>
-            </footer>
-            </div>
         </div>
 
     </form>
