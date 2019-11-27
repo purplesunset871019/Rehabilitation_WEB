@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#"  AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="Rehabilitation_WEB.Main" %>
+﻿<%@ Page Title="首頁" Language="C#"  AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="Rehabilitation_WEB.Main" %>
 
 
 
@@ -90,8 +90,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
     <footer>
+        <hr />
         <div style="background-color:#87CEFA;">
-            <a runat="server" style="color:white;">地址：237新北市三峽區復興路399號</a>
+        <a runat="server" style="color:white;">地址：237新北市三峽區復興路399號</a>
         </div>
         <div style="background-color:#32CD32;">
         <a runat="server" style="color:white;">&copy; <%: DateTime.Now.Year %>  行天宮醫療志業醫療財團法人恩主公醫院 En Chu Kong Hospital. All rights reserved.</a>
