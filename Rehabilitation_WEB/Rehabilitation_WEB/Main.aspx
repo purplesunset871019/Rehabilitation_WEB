@@ -27,12 +27,55 @@
         margin:1% auto;
         padding:1%;
     }
+
+    .button{
+        display:block; 
+        margin:0 auto; 
+        height: 200px; 
+        width: 300px; 
+        font-size: 45px; 
+        font-family:Microsoft YaHei; 
+        background-color:white;  
+        color:black;
+        border:4px solid #7ace4c;
+        border-radius:20px;
+        box-shadow: 0 9px #999;
+    }
+
+    .button:hover{
+        background-color:#7ace4c;
+        color:white;
+    }
+
+    .button:active {
+        background-color: #7ace4c;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
     footer{
-    width: 100%;
-    height:100px;   /* footer的高度一定要是固定值*/ 
-    position:absolute;
-    bottom:0px;
-    left:0px;
+        width: 100%;
+        height:100px;   /* footer的高度一定要是固定值*/ 
+        position:absolute;
+        bottom:0px;
+        left:0px;
+    }
+
+    .footer1{
+        background-color:#005e89;
+        line-height: 1.91428; 
+        padding-top:30px; 
+        padding-bottom:20px; 
+        width:50%; 
+        float:left; 
+        height: 150px; 
+        letter-spacing: 0.04em;
+    }
+
+    .footer2{
+        background-color: #7ace4c; 
+        text-align:center; 
+        padding:10px;
     }
     @media screen and (min-width:768px){
         .wrap{
@@ -74,13 +117,11 @@
     </nav>
       <div class="wrap">
           <div class="item">
-                <input id="buttom1" type="button" value="病人端" style="display:block; margin:0 auto; height: 200px; width: 300px; font-size: 45px; 
-                        font-family:Microsoft YaHei; background-color:#E8CCFF;  border-radius:20px;  " onclick="javascript: location.href = 'Patient_choose.aspx'" />                
+                <input id="buttom1" type="button" value="病人端" class="button" onclick="javascript: location.href = 'Patient_choose.aspx'" />                
 
           </div>
            <div class="item">
-                <input id="buttom2" type="button" value="復健師端" style="display:block; margin:0 auto; height: 200px; width: 300px; font-size: 45px; 
-                        font-family:Microsoft YaHei; background-color:#EEFFBB; border-radius:20px; " UseSubmitBehavior="False" runat="server" OnServerClick="Button2_Click" />
+                <input id="buttom2" type="button" value="復健師端"  class="button"  runat="server" OnServerClick="Button2_Click" />
           </div>
       </div>
     <!-- Optional JavaScript -->
@@ -91,9 +132,8 @@
   
     <footer>
         <hr />
-        <div class="footer-container" letter-spacing: 0.04em;>
+            <div class="footer1" style="text-align:center;">
 
-            <div style="background-color:#005e89;line-height: 1.91428; padding-top:30px; padding-bottom:20px; width:50%; float:left; height: 150px; text-align:center; ">
                 <p margin-top: 1em; >
                     <img src="https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/78378750_2183117291790479_2394982199288922112_n.jpg?_nc_cat=107&_nc_ohc=UgrNrcOdPIMAQnGJcHZO5F53Tiul9c4-DTB2OBfN2LaYsQGo9UXXiEF7g&_nc_ht=scontent.ftpe7-4.fna&oh=d4c000cc8ef112e5f6fabfd9158a604c&oe=5E7E9C88" width="40%" height="40%" />
                 </p>
@@ -104,7 +144,7 @@
                 
             </div>
             
-            <div style="background-color:#005e89;line-height: 1.91428; padding-top:30px; padding-bottom:20px; width:50%; float:left; height:150px;">
+            <div class="footer1">
                 <a runat="server" style="color:white; text-align:center; vertical-align:middle; letter-spacing: 0.04em; font-size: 17px;font-family:Microsoft YaHei;line-height: 1.91428; ">
                     復健醫學為連續性醫療系統中不可或缺的一環。病患由疾病的亞急性期、慢性期及恢復期中，透過完善的復健醫療，可使恢復完全或最大部分的生心理功能。主要醫療項目為中樞神經病變、周邊神經病變、骨骼肌肉病變、心肺功能訓練、兒童復健等等。
 
@@ -115,10 +155,9 @@
 
             </div>
 
-            <div style="background-color: #7ace4c; text-align:center; padding:10px;">
+            <div class="footer2">
                 <a runat="server" style="color:white; font-family:Microsoft YaHei;">&copy; <%: DateTime.Now.Year %>  行天宮醫療志業醫療財團法人恩主公醫院 En Chu Kong Hospital. All rights reserved.</a>
             </div>
-        </div>
         
     </footer>
 </body>

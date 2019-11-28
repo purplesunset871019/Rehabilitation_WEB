@@ -61,20 +61,22 @@
                 </div>
             </div>
         </div>
+                    <footer>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-        <div style="background-color:#87CEFA;">
+                    <div style="background-color:#87CEFA;">
             <a runat="server" style="color:white;">地址：</a>
         </div>
         <div style="background-color:#32CD32;">
         <a runat="server" style="color:white;">&copy; <%: DateTime.Now.Year %>  </a>
             </div>
-            </footer>
-        </div>
 
+
+
+        </div>
+            </footer>
     </form>
     </div>
 </body>
