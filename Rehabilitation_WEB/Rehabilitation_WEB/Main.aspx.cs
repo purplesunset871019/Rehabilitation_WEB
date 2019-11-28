@@ -13,5 +13,11 @@ namespace Rehabilitation_WEB
         {
 
         }
+
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Write("<script>alert('第四種方式，有白屏！')</script>");
+        }
     }
 }

@@ -45,7 +45,7 @@
     <link href="pricing.css" rel="stylesheet">
                  <nav class="navbar navbar-expand-lg bg-white">
               <a class="navbar-brand "  href="http://new.eck.org.tw/">
-            <img src="https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.15752-9/78416290_2640573792696341_4835815420730540032_n.jpg?_nc_cat=107&_nc_ohc=ck2PlIyxzbQAQkh-lmL3j2QRRpaBq6_LBaDlJUTuoy7ImR2_5kJkvAliA&_nc_ht=scontent.ftpe8-3.fna&oh=0543e20ee6c28e23ac7959ae8c3dbf48&oe=5E82FB07" width="40%" height="40%" class ="d-inline-block align-top " alt="">
+            <img src="https://images.1111.com.tw/oad/62/89762_0.jpg?2017/5/12%20%E4%B8%8A%E5%8D%88%2008:36:14" width="40%" height="40%" class ="d-inline-block align-top " alt="">
   </a>
     </nav>
             
@@ -80,7 +80,7 @@
           </div>
            <div class="item">
                 <input id="buttom2" type="button" value="復健師端" style="display:block; margin:0 auto; height: 200px; width: 300px; font-size: 45px; 
-                        font-family:Microsoft YaHei; background-color:#EEFFBB; border-radius:20px; " />
+                        font-family:Microsoft YaHei; background-color:#EEFFBB; border-radius:20px; " UseSubmitBehavior="False" runat="server" OnServerClick="Button2_Click" />
           </div>
       </div>
     <!-- Optional JavaScript -->
@@ -91,12 +91,35 @@
   
     <footer>
         <hr />
-        <div style="background-color:#87CEFA;">
-        <a runat="server" style="color:white;">地址：237新北市三峽區復興路399號</a>
+        <div class="footer-container" letter-spacing: 0.04em;>
+
+            <div style="background-color:#005e89;line-height: 1.91428; padding-top:30px; padding-bottom:20px; width:50%; float:left; height: 150px; text-align:center; ">
+                <p margin-top: 1em; >
+                    <img src="https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/78378750_2183117291790479_2394982199288922112_n.jpg?_nc_cat=107&_nc_ohc=UgrNrcOdPIMAQnGJcHZO5F53Tiul9c4-DTB2OBfN2LaYsQGo9UXXiEF7g&_nc_ht=scontent.ftpe7-4.fna&oh=d4c000cc8ef112e5f6fabfd9158a604c&oe=5E7E9C88" width="40%" height="40%" />
+                </p>
+                
+                <p margin-top: 1em;>
+                    <a runat="server" style="color:white; font-family:Microsoft YaHei;">地址：237新北市三峽區復興路399號</a>
+                </p>
+                
+            </div>
+            
+            <div style="background-color:#005e89;line-height: 1.91428; padding-top:30px; padding-bottom:20px; width:50%; float:left; height:150px;">
+                <a runat="server" style="color:white; text-align:center; vertical-align:middle; letter-spacing: 0.04em; font-size: 17px;font-family:Microsoft YaHei;line-height: 1.91428; ">
+                    復健醫學為連續性醫療系統中不可或缺的一環。病患由疾病的亞急性期、慢性期及恢復期中，透過完善的復健醫療，可使恢復完全或最大部分的生心理功能。主要醫療項目為中樞神經病變、周邊神經病變、骨骼肌肉病變、心肺功能訓練、兒童復健等等。
+
+                </a>
+            </div>
+
+            <div style="clear:both;">
+
+            </div>
+
+            <div style="background-color: #7ace4c; text-align:center; padding:10px;">
+                <a runat="server" style="color:white; font-family:Microsoft YaHei;">&copy; <%: DateTime.Now.Year %>  行天宮醫療志業醫療財團法人恩主公醫院 En Chu Kong Hospital. All rights reserved.</a>
+            </div>
         </div>
-        <div style="background-color:#32CD32;">
-        <a runat="server" style="color:white;">&copy; <%: DateTime.Now.Year %>  行天宮醫療志業醫療財團法人恩主公醫院 En Chu Kong Hospital. All rights reserved.</a>
-        </div>
+        
     </footer>
 </body>
 </html>
