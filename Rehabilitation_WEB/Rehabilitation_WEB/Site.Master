@@ -55,7 +55,7 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/Doctor_Default" style="color:white;">首頁</a></li>
                         <li><a runat="server" href="~/Set_up" style="color:white;">設定</a></li>
-                        <li><a runat="server" href="~/Set_up" style="color:white;">XX使用中</a></li>
+                        <li><a runat="server" style="color:white;">XX使用中</a></li>
                         <li><a runat="server" href="~/Main" style="color:white;">登出</a></li>
                     </ul>
                 </div>

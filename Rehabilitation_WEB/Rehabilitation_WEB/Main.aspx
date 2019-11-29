@@ -1,22 +1,16 @@
 ﻿<%@ Page Title="首頁" Language="C#"  AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="Rehabilitation_WEB.Main" %>
 
+<!DOCTYPE html>
 
-
-
-
-<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%: Page.Title %> - 復健管理系統</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>復健管理系統</title>
     <style type="text/css"> 
     .wrap{
         width:100%;
@@ -84,7 +78,7 @@
     }
     </style>
 </head>
-  <body>
+  <body >
     <link href="pricing.css" rel="stylesheet">
                  <nav class="navbar navbar-expand-lg bg-white">
               <a class="navbar-brand "  href="http://new.eck.org.tw/">
@@ -108,21 +102,25 @@
                         <a class="nav-link text-white" href="#">設定</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">關於</a>
+                        <a class="nav-link text-white"  href="#">關於</a>
                     </li>
                 </ul>
             </nav>
-            <a class="btn btn-outline-primary" href="Sign_in.aspx">登入</a>
+            <a class="btn btn-outline-primary" onclick="Button3_Click" >登入</a>
         </div>
     </nav>
-      <div class="wrap">
+      <div class="wrap" >
           <div class="item">
-                <input id="buttom1" type="button" value="病人端" class="button" onclick="javascript: location.href = 'Patient_choose.aspx'" />                
+                <input id="Button1" type="button" value="病人端" class="button" onclick="javascript: location.href = 'Patient_choose.aspx'" />                
 
           </div>
            <div class="item">
-                <input id="buttom2" type="button" value="復健師端"  class="button"  runat="server" OnServerClick="Button2_Click" />
+                <input id="Button2" type="button" value="復健師端"  class="button"   runat="server" OnServerClick="Button2_Click"/>
           </div>
+
+          <form  runat="server" style="display:none">
+              <asp:Button ID="Button4" runat="server" Text="Button" onclick="Button4_Click" />
+          </form>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
