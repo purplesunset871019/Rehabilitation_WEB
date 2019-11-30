@@ -13,5 +13,27 @@ namespace Rehabilitation_WEB
         {
 
         }
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            String account = TextBox1.Text;
+            string password = TextBox2.Text;
+
+            if (account=="123" && password=="456")
+            {
+                Response.Redirect("Main.aspx");
+            }
+            else if(account.Length == 0 || password.Length == 0){
+                Response.Write("<script>alert('請輸入帳號密碼')</script>");
+            }
+            else {
+                Response.Write("<script>alert('帳號密碼錯誤')</script>");
+            }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Main.aspx");
+        }
+        
     }
 }

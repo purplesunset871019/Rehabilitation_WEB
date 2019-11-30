@@ -106,7 +106,7 @@
                     </li>
                 </ul>
             </nav>
-            <a class="btn btn-outline-primary" onclick="Button3_Click" >登入</a>
+            <a class="btn btn-outline-primary" runat="server" OnServerClick="Button3_Click">登入</a>
         </div>
     </nav>
       <div class="wrap" >

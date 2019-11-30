@@ -24,8 +24,8 @@
          <p></p>
         <asp:TextBox ID="TextBox2" runat="server" placeholder="請輸入密碼" font-size="20px" padding="5px" border-radius="4px" margin="0px auto" display="block" width="80%"></asp:TextBox>        
         <p>
-        <asp:Button ID="Button1" runat="server" Text="確認" height="40px" width="60px" display="block" OnClientClick="window.location.href='Doctor_Default.aspx';return false;"/>
-        <asp:Button ID="Button2" runat="server" Text="返回" height="40px" width="60px" display="block" OnClientClick="window.location.href='Main.aspx';return false;"/>
+        <asp:Button ID="Button1" runat="server" Text="確認" height="40px" width="60px" display="block" onclick="Button1_Click" />
+        <asp:Button ID="Button2" runat="server" Text="返回" height="40px" width="60px" display="block" onclick="Button2_Click" />
     </form>
 </body>
 </html>
