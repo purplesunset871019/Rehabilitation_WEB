@@ -20,7 +20,7 @@ namespace Rehabilitation_WEB
 
             if (account=="123" && password=="456")
             {
-                Response.Redirect("Main.aspx");
+                Response.Redirect("Doctor_Default.aspx");
             }
             else if(account.Length == 0 || password.Length == 0){
                 Response.Write("<script>alert('請輸入帳號密碼')</script>");
