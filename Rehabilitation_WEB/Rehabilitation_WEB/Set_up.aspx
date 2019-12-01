@@ -53,6 +53,6 @@
                 <%--OnClick="window.location.href='Doctor_Default.aspx';return false;" --%>
             </div>
         </div>
-        <hr />
+
     </div>
 </asp:Content>

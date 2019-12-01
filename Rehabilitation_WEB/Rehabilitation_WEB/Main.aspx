@@ -11,71 +11,80 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <style type="text/css"> 
-    .wrap{
-        width:100%;
-        max-width:1400px;
-        margin:auto;
-    }
-    .item{
-        margin:1% auto;
-        padding:1%;
-    }
+    <style type="text/css">
+        .wrap {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
 
-    .button{
-        display:block; 
-        margin:0 auto; 
-        height: 200px; 
-        width: 300px; 
-        font-size: 45px; 
-        font-family:Microsoft YaHei; 
-        background-color:white;  
-        color:black;
-        border:4px solid #7ace4c;
-        border-radius:20px;
-        box-shadow: 0 9px #999;
-    }
-
-    .button:hover{
-        background-color:#7ace4c;
-        color:white;
-    }
-
-    .button:active {
-        background-color: #7ace4c;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-
-    footer{
-        width: 100%;
-        height:100px;   /* footer的高度一定要是固定值*/ 
-        position:absolute;
-        bottom:0px;
-        left:0px;
-    }
-
-    .footer1{
-        background-color:#005e89;
-        line-height: 1.91428; 
-        padding-top:30px; 
-        padding-bottom:20px; 
-        width:50%; 
-        float:left; 
-        height: 150px; 
-        letter-spacing: 0.04em;
-    }
-
-    .footer2{
-        background-color: #7ace4c; 
-        text-align:center; 
-        padding:10px;
-    }
-    @media screen and (min-width:768px){
-        .wrap{
-            display:flex;
         }
-    }
+
+        .item {
+            margin: 1% auto;
+            padding: 1%;
+        }
+
+        .button {
+            display: block;
+            margin: 0 auto;
+            height: 200px;
+            width: 300px;
+            font-size: 45px;
+            font-family: Microsoft YaHei;
+            background-color: white;
+            color: black;
+            border: 4px solid #7ace4c;
+            border-radius: 20px;
+            box-shadow: 0 9px #999;
+        }
+
+            .button:hover {
+                background-color: #7ace4c;
+                color: white;
+            }
+
+            .button:active {
+                background-color: #7ace4c;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+
+        footer {
+            width: 100%;
+            height: auto; /* footer的高度一定要是固定值*/
+            bottom: 0px;
+            left: 0px;
+        }
+        .row {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+         }
+
+        .footer1 {
+            background-color: #005e89;
+            line-height: 1.91428;
+            padding: 30px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            width: 50%;
+            float: left;
+            letter-spacing: 0.04em;
+        }
+
+        .footer2 {
+            background-color: #7ace4c;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media screen and (min-width:768px) {
+            .wrap {
+                display: flex;
+            }
+        }
     </style>
 </head>
   <body >
@@ -129,7 +138,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
     <footer>
-        <hr />
+        <hr/>
+        <div class="row">
             <div class="footer1" style="text-align:center;">
 
                 <p margin-top: 1em; >
@@ -139,11 +149,13 @@
                 <p margin-top: 1em;>
                     <a runat="server" style="color:white; font-family:Microsoft YaHei;">地址：237新北市三峽區復興路399號</a>
                 </p>
+
+
                 
             </div>
             
             <div class="footer1">
-                <a runat="server" style="color:white; text-align:center; vertical-align:middle; letter-spacing: 0.04em; font-size: 17px;font-family:Microsoft YaHei;line-height: 1.91428; ">
+                <a runat="server" style="color:white; text-align:center; vertical-align:middle; letter-spacing: 0.04em; font-size: 17px;font-family:Microsoft YaHei;line-height: 1.91428;">
                     復健醫學為連續性醫療系統中不可或缺的一環。病患由疾病的亞急性期、慢性期及恢復期中，透過完善的復健醫療，可使恢復完全或最大部分的生心理功能。主要醫療項目為中樞神經病變、周邊神經病變、骨骼肌肉病變、心肺功能訓練、兒童復健等等。
 
                 </a>
@@ -153,9 +165,12 @@
 
             </div>
 
-            <div class="footer2">
-                <a runat="server" style="color:white; font-family:Microsoft YaHei;">&copy; <%: DateTime.Now.Year %>  行天宮醫療志業醫療財團法人恩主公醫院 En Chu Kong Hospital. All rights reserved.</a>
-            </div>
+            
+        </div>
+
+        <div class="footer2">
+            <a runat="server" style="color:white; font-family:Microsoft YaHei;">&copy; <%: DateTime.Now.Year %>  行天宮醫療志業醫療財團法人恩主公醫院 En Chu Kong Hospital. All rights reserved.</a>
+        </div>
         
     </footer>
 </body>
