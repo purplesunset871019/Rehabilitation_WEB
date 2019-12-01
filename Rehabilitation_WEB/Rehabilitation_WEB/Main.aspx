@@ -16,6 +16,7 @@
             width: 100%;
             max-width: 1400px;
             margin: auto;
+
         }
 
         .item {
@@ -51,7 +52,6 @@
         footer {
             width: 100%;
             height: auto; /* footer的高度一定要是固定值*/
-            position: absolute;
             bottom: 0px;
             left: 0px;
         }
@@ -66,7 +66,7 @@
         .footer1 {
             background-color: #005e89;
             line-height: 1.91428;
-            padding: 20px;
+            padding: 30px;
             padding-top: 30px;
             padding-bottom: 20px;
             width: 50%;
