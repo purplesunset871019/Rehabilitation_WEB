@@ -3,6 +3,15 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <style type="text/css">
+        .item {
+            margin: 1% auto;
+            padding: 1%;
+        }
+        .wrap {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+        }
         .button{
             display: block;
             margin: 0 auto;
@@ -15,6 +24,7 @@
             border: 4px solid #7ace4c;
             border-radius: 20px;
             box-shadow: 0 9px #999;
+            float:left
         }
 
           .button:hover{
@@ -28,11 +38,20 @@
               transform: translateY(4px);
            }
     </style>
-    <asp:Button  ID="Button2" runat="server" Text="病人報到" Height="200px" Width="300px" Class="button" 
-        OnClientClick="window.location.href='Patient_check_in.aspx';return false;"/>
+    <div class="wrap">
 
-    <asp:Button  ID="Button1" runat="server" Text="病人排程" Height="200px" Width="300px"  Class ="button"
-        OnClientClick="window.location.href='Doctor_Schedule.aspx';return false;"/>
+        <div class="item">
+            <asp:Button  ID="Button2" runat="server" Text="病人報到" Height="200px" Width="300px" Class="button" 
+                OnClientClick="window.location.href='Patient_check_in.aspx';return false;"/>
+        </div>
+        
+        <div class="item">
+            <asp:Button  ID="Button1" runat="server" Text="病人排程" Height="200px" Width="300px"  Class ="button"
+                OnClientClick="window.location.href='Doctor_Schedule.aspx';return false;"/>
+        </div>
+        
+    </div>
+   
     
 
 </asp:Content>
