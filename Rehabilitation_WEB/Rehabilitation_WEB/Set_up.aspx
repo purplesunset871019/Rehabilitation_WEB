@@ -50,9 +50,9 @@
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input id="save" type="submit" value="存檔" class="btn" style="background-color: #99b2db; color: #194284" />
-                <%--OnClick="window.location.href='Doctor_Default.aspx';return false;" --%>
+                <input id="change" type="submit" value="修改密碼" class="btn" onclick="location.href='ChangeCode.aspx'" style="background-color: #99b2db; color: #194284" />
             </div>
         </div>
-        <hr />
+
     </div>
 </asp:Content>

@@ -105,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChangeCode.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -166,6 +167,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="ChangeCode.aspx.cs">
+      <DependentUpon>ChangeCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeCode.aspx.designer.cs">
+      <DependentUpon>ChangeCode.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Doctor_Schedule.aspx.cs">
       <DependentUpon>Doctor_Schedule.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
