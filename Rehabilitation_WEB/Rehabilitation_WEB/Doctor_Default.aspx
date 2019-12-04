@@ -48,13 +48,13 @@
     <div class="wrap">
 
         <div class="item">
-            <asp:Button  ID="Button2" runat="server" Text="病人報到" Height="200px" Width="300px" Class="button" 
-                OnClientClick="window.location.href='Patient_check_in.aspx';return false;"/>
+            <asp:Button  ID="Button2" runat="server" Text="掃描報到" Height="200px" Width="300px" Class="button" 
+                OnClientClick="window.location.href='Scan_checkin.aspx';return false;"/>
         </div>
         
         <div class="item">
-            <asp:Button  ID="Button1" runat="server" Text="病人排程" Height="200px" Width="300px"  Class ="button"
-                OnClientClick="window.location.href='Doctor_Schedule.aspx';return false;"/>
+            <asp:Button  ID="Button1" runat="server" Text="手動報到" Height="200px" Width="300px"  Class ="button"
+                OnClientClick="window.location.href='Manual_checkin.aspx';return false;"/>
         </div>
         
     </div>
