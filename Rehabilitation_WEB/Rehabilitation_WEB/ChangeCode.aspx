@@ -30,6 +30,14 @@
         </div>
 
         <div class="form-group">
+            <label class="control-label col-md-2 required" for="ConfirmCode">確認密碼：</label>
+            <div class="col-md-10">
+                <input class="form-control" data-val="true" id="ConfirmCode" name="ConfirmCode" type="text" />
+                <span class="field-validation-valid text-danger" data-valmsg-for="ConfirmCode" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input id="save" type="submit" value="存檔" class="btn" style="background-color: #99b2db; color: #194284" />                       
             </div>

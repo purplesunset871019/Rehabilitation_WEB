@@ -7,11 +7,13 @@
             margin: 1% auto;
             padding: 1%;
         }
+
         .wrap {
             width: 100%;
             max-width: 1400px;
             margin: auto;
         }
+
         .button{
             display: block;
             margin: 0 auto;
@@ -24,7 +26,6 @@
             border: 4px solid #7ace4c;
             border-radius: 20px;
             box-shadow: 0 9px #999;
-            float:left
         }
 
           .button:hover{
@@ -37,6 +38,12 @@
               box-shadow: 0 5px #666;
               transform: translateY(4px);
            }
+
+           @media screen and (min-width:768px) {
+            .wrap {
+                display: flex;
+            }
+        }
     </style>
     <div class="wrap">
 
