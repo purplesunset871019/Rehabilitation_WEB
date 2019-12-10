@@ -40,17 +40,8 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2" for="Category">類別：</label>
-            <div class="col-md-10">
-                <input class="form-control" data-val="true" id="Category" name="Category" type="text" />
-                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
-            </div>
-        </div>
-
-        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input id="save" type="submit" value="存檔" class="btn" style="background-color: #99b2db; color: #194284" />
-                <input id="change" type="submit" value="修改密碼" class="btn" onclick="location.href='ChangeCode.aspx'" style="background-color: #99b2db; color: #194284" />
             </div>
         </div>
 

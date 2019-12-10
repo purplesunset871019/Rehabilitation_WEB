@@ -314,3 +314,15 @@ C:\Users\user\Source\Repos\Rehabilitation_WEB2\Rehabilitation_WEB\Rehabilitation
 C:\Users\user\Source\Repos\Rehabilitation_WEB2\Rehabilitation_WEB\Rehabilitation_WEB\obj\Debug\Rehabilitation_WEB.csproj.CopyComplete
 C:\Users\user\Source\Repos\Rehabilitation_WEB2\Rehabilitation_WEB\Rehabilitation_WEB\obj\Debug\Rehabilitation_WEB.dll
 C:\Users\user\Source\Repos\Rehabilitation_WEB2\Rehabilitation_WEB\Rehabilitation_WEB\obj\Debug\Rehabilitation_WEB.pdb
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\AForge.dll
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\AForge.Video.DirectShow.dll
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\AForge.Video.dll
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\AForge.xml
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\AForge.Video.xml
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\AForge.Video.DirectShow.xml
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\zxing.dll
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\zxing.presentation.dll
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\zxing.pdb
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\zxing.xml
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\zxing.presentation.pdb
+C:\Users\hsb41\Desktop\復健專題\Rehabilitation_WEB\Rehabilitation_WEB\Rehabilitation_WEB\bin\zxing.presentation.xml

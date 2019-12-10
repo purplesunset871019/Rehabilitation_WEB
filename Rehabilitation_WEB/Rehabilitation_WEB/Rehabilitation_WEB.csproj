@@ -44,6 +44,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="AspNet.ScriptManager.jQuery, Version=3.4.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
     </Reference>
@@ -98,6 +107,12 @@
     <Reference Include="Microsoft.AspNet.FriendlyUrls">
       <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
     </Reference>
+    <Reference Include="zxing, Version=0.16.5.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.5\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.5.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.5\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -105,14 +120,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ChangeCode.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Doctor_Schedule.aspx" />
+    <Content Include="Manual_checkin.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Patient_check_in.aspx" />
+    <Content Include="Scan.aspx" />
+    <Content Include="Scan.html" />
+    <Content Include="Scan_checkin.aspx" />
     <Content Include="replace.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -166,26 +182,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="ChangeCode.aspx.cs">
-      <DependentUpon>ChangeCode.aspx</DependentUpon>
+    <Compile Include="Manual_checkin.aspx.cs">
+      <DependentUpon>Manual_checkin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ChangeCode.aspx.designer.cs">
-      <DependentUpon>ChangeCode.aspx</DependentUpon>
+    <Compile Include="Manual_checkin.aspx.designer.cs">
+      <DependentUpon>Manual_checkin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Doctor_Schedule.aspx.cs">
-      <DependentUpon>Doctor_Schedule.aspx</DependentUpon>
+    <Compile Include="Scan.aspx.cs">
+      <DependentUpon>Scan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Doctor_Schedule.aspx.designer.cs">
-      <DependentUpon>Doctor_Schedule.aspx</DependentUpon>
+    <Compile Include="Scan.aspx.designer.cs">
+      <DependentUpon>Scan.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Patient_check_in.aspx.cs">
-      <DependentUpon>Patient_check_in.aspx</DependentUpon>
+    <Compile Include="Scan_checkin.aspx.cs">
+      <DependentUpon>Scan_checkin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Patient_check_in.aspx.designer.cs">
-      <DependentUpon>Patient_check_in.aspx</DependentUpon>
+    <Compile Include="Scan_checkin.aspx.designer.cs">
+      <DependentUpon>Scan_checkin.aspx</DependentUpon>
     </Compile>
     <Compile Include="replace.aspx.cs">
       <DependentUpon>replace.aspx</DependentUpon>
