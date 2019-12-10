@@ -144,7 +144,7 @@
     </nav>
     <div class="wrap">
         <div class="item">
-            <input id="Button1" type="button" value="病人端" class="button" onclick="javascript: location.href = 'Patient_choose.aspx'" />
+            <input id="Button1" type="button" value="病人端" class="button" onclick="javascript: location.href = 'Scan.html'" />
 
         </div>
         <div class="item">
