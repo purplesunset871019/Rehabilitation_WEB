@@ -144,7 +144,7 @@
     </nav>
     <div class="wrap">
         <div class="item">
-            <input id="Button1" type="button" value="病人端" class="button" onclick="javascript: location.href = 'Scan.html'" />
+            <input id="Button1" type="button" value="病人端" class="button" />
 
         </div>
         <div class="item">

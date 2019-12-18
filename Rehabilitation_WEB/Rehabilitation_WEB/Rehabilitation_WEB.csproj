@@ -126,7 +126,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Manual_checkin.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Scan.aspx" />
     <Content Include="Scan.html" />
     <Content Include="Scan_checkin.aspx" />
     <Content Include="replace.aspx" />
@@ -188,13 +187,6 @@
     </Compile>
     <Compile Include="Manual_checkin.aspx.designer.cs">
       <DependentUpon>Manual_checkin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Scan.aspx.cs">
-      <DependentUpon>Scan.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Scan.aspx.designer.cs">
-      <DependentUpon>Scan.aspx</DependentUpon>
     </Compile>
     <Compile Include="Scan_checkin.aspx.cs">
       <DependentUpon>Scan_checkin.aspx</DependentUpon>
