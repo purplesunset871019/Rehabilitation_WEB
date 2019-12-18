@@ -4,31 +4,13 @@
 <h2>掃描報到</h2>
     <div class="form-horizontal">
         <hr />
-
-        <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript">
-
-            $('input[name ="scantext2"]').val(oneValues());
-
-            function oneValues() {
-                var result;
-                var url = window.location.search; //获取url中"?"符后的字串  
-                if (url.indexOf("?") != -1) {
-                    result = url.substr(url.indexOf("=") + 1);
-                    alert(result);
-                }
-                return result;
-            }
-        </script>
-
-
         <div class="form-group">
             <label class="control-label col-md-2" for="Code">批價序號：</label>
             <div class="col-md-10">
-                <input id="scantext"  type="text"  />
-                <input id="scantext2" name="scantext2" type="text"  />
+                <input id="scantext" type="text" name="scanname" />
             </div>
         </div>
+        
 
         <div class="form-group">
             <label class="control-label col-md-2" for="Number">醫令流水序號：</label>
@@ -73,10 +55,23 @@
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input id="save" type="submit" value="存檔" class="btn" style="background-color: #99b2db; color: #194284" />
+                <input id="scan" type="button" value="掃描新病人" class="btn" style="background-color: #99b2db; color: #194284" onclick="javascript: location.href = 'Scan.html'" />
+                </div>
             </div>
-            <div class="col-md-offset-2 col-md-10">
-                <input id="scan" type="button" value="掃描新病人" class="btn" style="background-color: #99b2db; color: #194284" onclick="javascript: location.href = 'Scan.html'"/>
-            </div>
-        </div>
     </div>
+
+    <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+
+        $('input[name="scanname"]').val(oneValues());
+
+        function oneValues() {
+            var result;
+            var url = window.location.search; //获取url中"?"符后的字串  
+            if (url.indexOf("?") != -1) {
+                result = url.substr(url.indexOf("=") + 1);
+            }
+            return result;
+        }
+    </script>
 </asp:Content>
