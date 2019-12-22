@@ -7,7 +7,7 @@
         <div class="form-group">
             <label class="control-label col-md-2" for="Code">批價序號：</label>
             <div class="col-md-10">
-                <input id="scantext" type="text" name="scanname" />
+                <input class="form-control" data-val="true" id="scantext" type="text" name="scanname" />
             </div>
         </div>
         
