@@ -11,7 +11,7 @@ namespace Rehabilitation_WEB
 {
 
 
-    public partial class Doctor_Schedule
+    public partial class Manual_checkin
     {
     }
 }

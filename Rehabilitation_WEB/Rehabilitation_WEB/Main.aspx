@@ -132,14 +132,11 @@
                         <a class="nav-link text-white" href="#">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">設定</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link text-white" href="#">關於</a>
                     </li>
                 </ul>
             </nav>
-            <a class="btn btn-outline-primary" runat="server" onserverclick="Button3_Click">登入</a>
+            
         </div>
     </nav>
     <div class="wrap">
@@ -148,12 +145,9 @@
 
         </div>
         <div class="item">
-            <input id="Button2" type="button" value="復健師端" class="button" runat="server" onserverclick="Button2_Click" />
+            <input id="Button2" type="button" value="復健師端" class="button" runat="server" onclick="javascript: location.href = 'Sign_in.aspx'" />
         </div>
 
-        <form runat="server" style="display: none">
-            <asp:Button ID="Button4" runat="server" Text="Button" OnClick="Button4_Click" />
-        </form>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

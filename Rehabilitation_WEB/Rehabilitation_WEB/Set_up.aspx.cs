@@ -23,16 +23,16 @@ namespace Rehabilitation_WEB
             string Gender = Request["Gender"];
             string EmployeeJob = Request["EmployeeJob"];
 
-            connetionString = @"data source=FRANK\SQLEXPRESS; initial catalog = LocalDB; user id = sa; password = 123";
+            connetionString = @"data source=localhost; initial catalog = LocalDB; user id = sa; password = 123";
 
             conn = new SqlConnection(connetionString);
             conn.Open();
-            SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "insert into test2 (EmployeeName,Gender,EmployeeJob) values('" + username + "','" + Gender + "','" + EmployeeJob + "')";
-            cmd.ExecuteNonQuery();
 
-            conn.Close();
+            SqlCommand cmd = new SqlCommand("Update dbo.Rehabilitation SET EmployeeName='" + username + "',Gender='" + Gender + "', EmployeeJob='" + EmployeeJob + "' where EmployeeName='" + username + "'", conn);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.ExecuteNonQuery();
+            Response.Write("<script>alert('修改成功')</script>");
+            //MessageBox.Show("Data Updated");
         }
     }
 }

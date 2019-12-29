@@ -49,7 +49,7 @@
 
         <div class="item">
             <asp:Button  ID="Button2" runat="server" Text="掃描報到" Height="200px" Width="300px" Class="button" 
-                OnClientClick="window.location.href='Scan_checkin.aspx';return false;"/>
+                OnClientClick="window.location.href='Scan.html';return false;"/>
         </div>
         
         <div class="item">
