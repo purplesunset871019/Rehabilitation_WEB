@@ -128,7 +128,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Scan.html" />
     <Content Include="Scan_checkin.aspx" />
-    <Content Include="replace.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -194,13 +193,6 @@
     </Compile>
     <Compile Include="Scan_checkin.aspx.designer.cs">
       <DependentUpon>Scan_checkin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="replace.aspx.cs">
-      <DependentUpon>replace.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="replace.aspx.designer.cs">
-      <DependentUpon>replace.aspx</DependentUpon>
     </Compile>
     <Compile Include="Set_up.aspx.cs">
       <DependentUpon>Set_up.aspx</DependentUpon>

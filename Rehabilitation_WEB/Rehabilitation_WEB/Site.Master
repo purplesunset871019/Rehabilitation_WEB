@@ -22,7 +22,7 @@
             height: auto; /* footer的高度一定要是固定值*/
             bottom: 0px;
             left: 0px;
-            text-decoration:none;
+            text-decoration: none;
         }
 
         .row {
@@ -42,14 +42,14 @@
             width: 50%;
             float: left;
             letter-spacing: 0.04em;
-            text-decoration:none;
+            text-decoration: none;
         }
 
         .footer2 {
             background-color: #7ace4c;
             text-align: center;
             padding: 10px;
-            text-decoration:none;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -86,25 +86,39 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar">
+                            <ul class="nav navbar-nav navbar">                                 
                                  <li><a class="navbar-brand" href="#" style="color: white;">復健師端</a></li>
-                                 <li><a class="navbar-brand" style="color: white;">XXX使用中</a></li>
-                                 <li><a class="navbar-brand" style="color: white;">XX治療</a></li>
+                                 <li><asp:Label class="navbar-brand" ID="Label1" runat="server" Text="Label1" style="color: white;" ></asp:Label></li>
+                                 <li><asp:Label class="navbar-brand" ID="Label2" runat="server" Text="Label2" style="color: white;" ></asp:Label></li>
                             </ul>
                         </div>
                     </div>
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a runat="server" href="~/Doctor_Default" style="color: white;">首頁</a></li>
-                            <li><a runat="server" href="~/Set_up" style="color: white;">設定</a></li>
-                            <li><a runat="server" href="~/Main" style="color: white;">登出</a></li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a runat="server" href="~/Doctor_Default" style="color: white;">首頁</a></li>
+                        <li><a runat="server" href="~/Set_up" style="color: white;">設定</a></li>
+                        <li><a runat="server" href="~/Main" style="color: white;">登出</a></li>
+                    </ul>
                 </div>
             </div>
+    </div>
 
-            <footer>
+    <div class="form-group">
+        <div class="col-md-10">
+            <asp:HiddenField ID="EmployeeNumber" runat="server"></asp:HiddenField>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+
+    <%--            <div class="form-group">
+            <div class="col-md-10">
+                <asp:HiddenField ID="EmployeeJob" runat="server" ></asp:HiddenField>
+                <span class="field-validation-valid text-danger" data-valmsg-for="Job" data-valmsg-replace="true"></span>
+            </div>
+            </div>--%>
+
+    <footer>
                 <div style="text-decoration:none;">
                     <asp:ContentPlaceHolder ID="MainContent" runat="server">
                     </asp:ContentPlaceHolder>

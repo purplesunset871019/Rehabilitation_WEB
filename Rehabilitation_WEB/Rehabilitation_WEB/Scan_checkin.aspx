@@ -1,13 +1,12 @@
-﻿<%@ Page Title="掃描報到" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Scan_checkin.aspx.cs" Inherits="Rehabilitation_WEB.Patient_check_in" %>
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Scan_checkin.aspx.cs" Inherits="Rehabilitation_WEB.Scan_checkin" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <h2>掃描報到</h2>
     <div class="form-horizontal">
         <hr />
         <div class="form-group">
             <label class="control-label col-md-2" for="Code">批價序號：</label>
             <div class="col-md-10">
-                <input class="form-control" data-val="true" id="scantext" type="text" name="scanname" />
+                <input class="form-control" data-val="true" id="scantext" type="text" name="scantext" runat="server"/>
             </div>
         </div>
         
@@ -29,10 +28,16 @@
             </div>
         </div>
 
+            <form id="form1" runat="server">
+    <div>
+        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+        </asp:CheckBoxList>
+    </div>
+    </form>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input id="save" type="submit" value="存檔" class="btn" style="background-color: #99b2db; color: #194284" />
+                <input id="save" type="submit" value="存檔" class="btn" style="background-color: #99b2db; color: #194284" runat="server" onserverclick="Scan_checkin_save_click"/>
                 <input id="scan" type="button" value="掃描新病人" class="btn" style="background-color: #99b2db; color: #194284" onclick="javascript: location.href = 'Scan.html'" />
                 </div>
             </div>
@@ -41,7 +46,7 @@
     <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
 
-        $('input[name="scanname"]').val(oneValues());
+        $('input[name="scantext"]').val(oneValues());
 
         function oneValues() {
             var result;
@@ -52,4 +57,5 @@
             return result;
         }
     </script>
+
 </asp:Content>
